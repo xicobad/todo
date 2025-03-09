@@ -8,11 +8,10 @@
       "react"
    ],
    "extends": [
-      "airbnb/base",
-      "plugin:react/recommended"
+      "airbnb/base"
    ],
    "rules": {
-      "semi": "warn",
+      "semi": "off",
       "no-plusplus": "off",
       "eol-last": "off",
       "max-len": [
@@ -32,7 +31,8 @@
       ],
       "prefer-destructuring": "off", //выключает пред деструктр объектов
       "no-param-reassign": "warn", //переопределение паратетров
-      "import/no-named-as-default": "off",
-      "import/no-named-as-default-member": "off"
+      "import/no-named-as-default": "off", //?
+      "import/no-named-as-default-member": "off", //?
+      "class-methods-use-this": "off" //убирает использование this в методах
    }
 }
