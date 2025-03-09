@@ -1,0 +1,30 @@
+{
+   "env": {
+      "browser": true,
+      "es6": true,
+      "node": true
+   },
+   "extends": [
+      "airbnb/base"
+   ],
+   "rules": {
+      "semi": "off",
+      "no-plusplus": "off",
+      "eol-last": "off",
+      "max-len": [
+         "error",
+         150,
+         {
+            "ignoreUrls": true
+         }
+      ],
+      "no-tabs": "off",
+      "no-alert": "off",
+      "indent": [ //не проверяется пробелы или таб
+         "off",
+         "tab"
+      ],
+      "prefer-destructuring": "off", //выключает пред деструктр объектов
+      "no-param-reassign": "warn" //переопределение паратетров
+   }
+}
