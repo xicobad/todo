@@ -4,11 +4,15 @@
       "es6": true,
       "node": true
    },
+   "plugins": [
+      "react"
+   ],
    "extends": [
-      "airbnb/base"
+      "airbnb/base",
+      "plugin:react/recommended"
    ],
    "rules": {
-      "semi": "off",
+      "semi": "warn",
       "no-plusplus": "off",
       "eol-last": "off",
       "max-len": [
@@ -18,6 +22,8 @@
             "ignoreUrls": true
          }
       ],
+      "linebreak-style": "off", // LF / CRLF
+      "react/prop-types": "off", //выключает ошибку prop-types
       "no-tabs": "off",
       "no-alert": "off",
       "indent": [ //не проверяется пробелы или таб
@@ -25,6 +31,8 @@
          "tab"
       ],
       "prefer-destructuring": "off", //выключает пред деструктр объектов
-      "no-param-reassign": "warn" //переопределение паратетров
+      "no-param-reassign": "warn", //переопределение паратетров
+      "import/no-named-as-default": "off",
+      "import/no-named-as-default-member": "off"
    }
 }
